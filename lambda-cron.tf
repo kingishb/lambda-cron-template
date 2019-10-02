@@ -11,8 +11,8 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    #edit me - create a bucket for terraform state and
-    # write name here
+    #edit me - create a bucket for persisting terraform state and
+    # write the name here. do this before your first terraform init.
     bucket = "my-terraform-state"
 
     key     = "terraform.tfstate"
