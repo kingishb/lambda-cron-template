@@ -172,7 +172,7 @@ resource "aws_cloudwatch_event_rule" "lambda_rate" {
 }
 
 resource "aws_cloudwatch_event_target" "cron_job_lambda_events" {
-  target_id = "ffm_down_bot_lambda"
+  target_id = "cron_job_lambda"
   rule      = "${aws_cloudwatch_event_rule.lambda_rate.name}"
   arn       = "${aws_lambda_function.cron_job.arn}"
 }
