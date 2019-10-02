@@ -21,14 +21,6 @@ terraform {
   }
 }
 
-variable "terraform_kms_key" {
-  description = "Identifier of KMS key for terraform state locking table"
-  type        = "string"
-
-  #edit me
-  default = ""
-}
-
 variable "lambda_policy" {
   description = "Policy name for IAM"
   type        = "string"
