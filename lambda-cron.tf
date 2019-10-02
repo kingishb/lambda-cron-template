@@ -4,7 +4,7 @@
 # access to an s3 bucket for persisting state.
 #
 # you have to give stuff names in the places called "edit me"
-# but otherwise this should just work.
+# but otherwise this should work.
 provider "aws" {
   region = "us-east-1"
 }
