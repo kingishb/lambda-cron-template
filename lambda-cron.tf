@@ -3,8 +3,8 @@
 # function that is invoked on a schedule. it has read and write
 # access to an s3 bucket for persisting state.
 #
-# you have to give stuff names in the places called "edit me"
-# but otherwise this should work.
+# choose names in the places called "edit me"
+
 provider "aws" {
   region = "us-east-1"
 }
