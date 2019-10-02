@@ -160,7 +160,7 @@ resource "aws_lambda_function" "cron_job" {
   # see https://docs.aws.amazon.com/lambda/latest/dg/API_CreateFunction.html#SSS-CreateFunction-request-Runtime
   runtime = "provided"
 
-  # edit me - variables go here
+  # edit me - environment variables go here
   environment = {
     variables = {}
   }
