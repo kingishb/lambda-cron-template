@@ -3,7 +3,7 @@
 # function that is invoked on a schedule. it has read and write
 # access to an s3 bucket for persisting state.
 #
-# choose names in the places called "edit me"
+# everywhere you see "edit me" read and fill in names.
 
 provider "aws" {
   region = "us-east-1"
@@ -11,7 +11,7 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    #edit me - create a bucket for persisting terraform state and
+    #edit me - create an s3 bucket for persisting terraform state and
     # write the name here. do this before your first terraform init.
     bucket = "my-terraform-state"
 
