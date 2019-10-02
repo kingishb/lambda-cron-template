@@ -174,6 +174,8 @@ resource "aws_cloudwatch_event_rule" "lambda_rate" {
   ]
 
   # edit me - this runs every day at 1am
+  # see https://docs.aws.amazon.com/lambda/latest/dg/tutorial-scheduled-events-schedule-expressions.html
+  # for writing your own schedule
   schedule_expression = "cron(0 1 * * ? *)"
 }
 
